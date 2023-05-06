@@ -1,0 +1,736 @@
+{
+  // ================================================================
+  // 基础 | Basic
+  // ================================================================
+  "files.eol": "\n",
+  // 文件是否自动保存, 保存时间间隔设置
+  "files.autoSave": "off",
+  "files.autoSaveDelay": 200,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  // 智能搜索
+  "search.smartCase": true,
+  // 全局搜索时排除掉一些指定目录 | 提升检索速度
+  "search.exclude": {
+    "**/.git": true,
+    "**/.github": true,
+    "**/.nuxt": true,
+    "**/.output": true,
+    "**/.pnpm": true,
+    "**/.vscode": true,
+    "**/.yarn": true,
+    "**/bower_components": true,
+    "**/dist/**": true,
+    "**/logs": true,
+    "**/node_modules": true,
+    "**/out/**": true,
+    "**/package-lock.json": true,
+    "**/pnpm-lock.yaml": true,
+    "**/tmp": true,
+    "**/yarn.lock": true,
+    "**/target": true,
+    "**/.data": true,
+    "**/.history": true,
+    "**/.idea": true,
+    "**/built": true,
+    "**/bootstrap": true,
+    "**/libs": true,
+    "**/locale": true,
+    "**/plugin": true,
+    "**/dist": true
+  },
+  // ================================================================
+  // 窗口 | Window and Workbench
+  // ================================================================
+  // 是否使用原生标签页
+  "window.nativeTabs": false,
+  "window.titleBarStyle": "custom",
+  // 搜索项居中
+  "window.commandCenter": false,
+  // 对话框外观
+  "window.dialogStyle": "custom",
+  "workbench.statusBar.visible": true,
+  "window.newWindowDimensions": "offset",
+  "workbench.iconTheme": "file-icons",
+  "workbench.colorTheme": "Default Light+",
+  // 白天/夜晚使用的主题
+  "workbench.preferredLightColorTheme": "Default Light+",
+  "workbench.preferredDarkColorTheme": "Panda Syntax",
+  // "workbench.preferredDarkColorTheme": "Default Light+",
+  // 通过 sundial 配置日出日落时间（自定义主题生效时间，不受到系统设定约束）
+  "sundial.sunrise": "07:00",
+  "sundial.sunset": "18:30",
+  // 多长时间进行检查是否更换主题（分钟）
+  "sundial.interval": 30,
+  // 白天/夜晚需要替换的其他配置
+  "sundial.daySettings": {
+    // "workbench.iconTheme": "file-icons"
+  },
+  "sundial.nightSettings": {},
+  // 是否开启根据白天/黑夜自动切换主题（需要先配置好对应的主题，已被 sundial 替代）
+  "window.autoDetectColorScheme": false,
+  // 是否显示多个 tab 标签, false 就类似 mac 的台前调度
+  "workbench.editor.showTabs": true,
+  "workbench.editor.showIcons": true,
+  "workbench.list.smoothScrolling": true,
+  "workbench.editor.closeOnFileDelete": true,
+  // tab 标签的关闭图标是否显示
+  "workbench.editor.tabCloseButton": "right",
+  "workbench.editor.limit.enabled": true,
+  // 控制当超出可用空间时, tab 是否换行或者显示滚动条
+  "workbench.editor.wrapTabs": false,
+  // 设置最大显示 tab title 的个数
+  "workbench.editor.limit.value": 5,
+  // 应用于每个编辑组
+  "workbench.editor.limit.perEditorGroup": true,
+  "workbench.tree.expandMode": "singleClick",
+  "workbench.tree.indent": 10,
+  "workbench.startupEditor": "newUntitledFile",
+  // ================================================================
+  // 编辑区 | Editor
+  // ================================================================
+  "editor.tabSize": 2,
+  "editor.fontSize": 13.5,
+  "editor.lineHeight": 1.6,
+  // 行号显示
+  "editor.lineNumbers": "on",
+  // 不设置默认使用系统字体
+  "editor.fontFamily": "Comic Shanns, FantasqueSansMono NFM, FiraCode Nerd Font Mono Retina, Source Code Pro,JetBrains Mono,Droid Sans Mono, Hack Monaco Menlo Consolas, FiraCode Nerd Font Mono, DejaVu Sans Mono, DejaVuLGCSansCode, Droid Sans Mono, Source Code Pro, menlo, JetBrainsMono Nerd Font, menlo",
+  // "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss06', 'zero'",
+  // 右侧小地图显示大小设置
+  "editor.minimap.size": "fit",
+  // 类似 auto rename tag 插件的功能, 遇到多个 tag 匹配项需要更改后按下保存
+  "editor.linkedEditing": true,
+  // 提示建议
+  "editor.suggest.insertMode": "replace",
+  // HINT: 这个设置可以帮助你解决 snippets 导致 tab 补全异常的问题
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "editor.suggest.localityBonus": true,
+  "editor.suggestSelection": "first",
+  "editor.suggest.preview": true,
+  "editor.inlineSuggest.enabled": false,
+  "editor.suggest.shareSuggestSelections": true,
+  "editor.suggest.showStatusBar": true,
+  "emmet.showSuggestionsAsSnippets": true,
+  "emmet.useInlineCompletions": true,
+  "editor.detectIndentation": false,
+  "editor.accessibilitySupport": "off",
+  "editor.acceptSuggestionOnEnter": "on",
+  // 突出当前行高亮方式
+  "editor.renderLineHighlight": "line",
+  // 使光标更加丝滑的移动
+  "editor.cursorSmoothCaretAnimation": "on",
+  // 光标闪烁动画
+  "editor.cursorBlinking": "blink",
+  "editor.find.addExtraSpaceOnTop": false,
+  "editor.glyphMargin": true,
+  // 是否替换 alt 的多光标映射
+  "editor.multiCursorModifier": "alt",
+  // 渲染空格字符的方式
+  "editor.renderWhitespace": "selection",
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  // 括号着色
+  "editor.bracketPairColorization.enabled": true,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.guides.bracketPairs": "active",
+  // 优化滚动动画
+  "editor.smoothScrolling": true,
+  // 设置是否可以滚动到最后一行之后
+  "editor.scrollBeyondLastLine": true,
+  // 是否开启粘性滚动
+  // "editor.stickyScroll.enabled": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    // 允许 ESlint 在保存时自动修复
+    "source.fixAll.eslint": true,
+    // 开启stylelint自动修复
+    "source.fixAll.stylelint": true,
+  },
+  // 自定义代码编辑区内容
+  "editor.tokenColorCustomizations": {
+    "[Vitesse Dark]": {
+      // 注释颜色更改
+      "comments": "#909090"
+    },
+    "[Ayu Mojave]": {
+      "comments": "#a2aaa2"
+    },
+    "[One Dark Pro Darker]": {
+      "comments": "#a2aaa2"
+    },
+    "[Moegi Dark Vitesse]": {
+      "comments": "#a1a7a1"
+    },
+    "[GitHub Dark Dimmed]": {
+      "comments": "#adb5ad"
+    },
+    "[Panda Syntax]": {
+      "comments": "#adb5ad",
+      "textMateRules": [
+        // 更改编辑器中 html 配色方案
+        {
+          "scope": [
+            "entity.name.tag",
+            "entity.name.tag.css",
+            "support.class.component"
+          ],
+          "settings": {
+            "foreground": "#ed9cc2"
+          }
+        },
+        {
+          "scope": "meta.tag.structure.any.html, meta.tag.other.html, entity.name.tag.html, meta.tag.metadata.script.html, entity.name.tag.jade",
+          "settings": {
+            "foreground": "#ed9cc2"
+          }
+        },
+        {
+          "scope": "source.vue, entity.name.tag.pug, meta.tag.other",
+          "settings": {
+            "foreground": "#ed9cc2"
+          }
+        }
+      ]
+    },
+    "[Moegi Dark]": {
+      "comments": "#909090",
+      "textMateRules": []
+    },
+    // 文本样式调整
+    "textMateRules": [
+      // 注释样式: 正常或者斜体
+      {
+        "name": "Comment Italics",
+        "scope": [
+          "comment",
+          "punctuation.definition.comment"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+      // 设置关键词粗体
+      // {
+      //   "name": "Keyword Bold",
+      //   "scope": ["keyword", "storage.type", "storage.modifier"],
+      //   "settings": {
+      //     "fontStyle": "bold"
+      //   }
+      // }
+    ]
+  },
+  // 自定义主题样式
+  "workbench.colorCustomizations": {
+    // note: active: 活动状态 | inactive: 非活动状态 | foreground: 前景色 | background: 背景色 | border: 边框
+    "[Panda Syntax]": {
+      // "commandCenter.border": "#86f6de8f",
+      "badge.background": "#aaaaaa",
+      "badge.foreground": "#000000",
+      "quickInput.background": "#202020bf",
+      "widget.shadow": "#0000008f",
+      "titleBar.border": "#aaaaaa4f",
+      "tab.border": "#aaaaaa4f",
+      "contrastBorder": "#0000008f",
+      // "tab.activeBorderTop": "#86f6de",
+      // "tab.activeBorder": "#292a2b",
+      "tab.activeBorder": "#86f6deaf",
+      "editorGroupHeader.tabsBorder": "#aaaaaa4f",
+      "textCodeBlock.background": "#aaaaaa4f",
+      "editorWidget.foreground": "#cccccc",
+      "editorCursor.background": "#ffffff",
+      "editor.selectionBackground": "#aaaaaa4f",
+      // 当前行高亮
+      "editor.lineHighlightBackground": "#aaaaaa2f",
+      "editor.selectionHighlightBackground": "#aaaaaa2f",
+      "editor.wordHighlightBackground": "#aaaaaa2f",
+      // 建议/智能补全提示
+      "editorSuggestWidget.selectedForeground": "#ffffffff",
+      "editorSuggestWidget.selectedBackground": "#aaaaaa2f",
+      "editorHoverWidget.background": "#202020ef",
+      "editorWidget.background": "#202020ef",
+      "scrollbarSlider.activeBackground": "#aaaaaa2f",
+      "scrollbarSlider.background": "#aaaaaa2f",
+      "scrollbarSlider.hoverBackground": "#aaaaaa2f"
+    },
+    // hint: 特别暗环境可以开起来这个, 最近发现 dark mode 主题背景太暗的话是有点费眼睛的
+    "[-Panda Syntax][Vitesse Dark]": {
+      //  Basic | 基础
+      // 调整组件之间间距大小的边框
+      "sash.hoverBorder": "#66c0ad",
+      // 输入框
+      "input.background": "#1a1d22",
+      // ctrl+p 调出来的全局面板
+      "quickInput.background": "#12151aaf",
+      // 焦点元素整体边框颜色 | 大部分组件窗口都适用
+      "focusBorder": "#aaaaaa5f",
+      // git 忽略文件字体颜色
+      "gitDecoration.ignoredResourceForeground": "#aaaaaa5f",
+      // 文本中代码块的颜色
+      "textCodeBlock.background": "#aaaaaa3f",
+      // 编辑区域下面可以调出来的面板(包含终端), 测试了下貌似会影响到终端颜色, 终端未设置的前提下
+      "panel.background": "#13151b",
+      // 小组件阴影 | 查找/替换/全局面板
+      "widget.shadow": "#00000033",
+      // 与滚动条相关的边框阴影设置
+      "scrollbar.shadow": "#050505",
+      "scrollbarSlider.activeBackground": "#aaaaaa2f",
+      "scrollbarSlider.background": "#aaaaaa2f",
+      "scrollbarSlider.hoverBackground": "#aaaaaa2f",
+      "panel.border": "#abbcab50",
+      // 文件链接
+      // "textLink.activeForeground": "#ff8787",
+      // "textLink.foreground": "#ff8787cc",
+      // Window | 窗口 | 顶部
+      "titleBar.activeForeground": "#cccccc",
+      "titleBar.inactiveForeground": "#cccccc",
+      "titleBar.activeBackground": "#12151a",
+      "titleBar.inactiveBackground": "#12151a",
+      "titleBar.border": "#aaaaaa5f",
+      // Activity | 活动栏 | 最左侧的那一列
+      "activityBar.background": "#12151a",
+      "activityBar.border": "#aaaaaa5f",
+      // 活动中的图标前景色
+      "activityBar.foreground": "#dddddd",
+      "activityBar.inactiveForeground": "#dddddd5f",
+      "activityBar.activeBorder": "#66c0ad",
+      "activityBarBadge.foreground": "#000000",
+      "activityBarBadge.background": "#77dac5",
+      // Explorer | 侧边栏 (文件/资源管理器)
+      "sideBar.background": "#12151a",
+      "sideBar.border": "#aaaaaa5f",
+      "sideBarSectionHeader.border": "#aaaaaa5f",
+      // 第一级菜单背景色
+      "sideBarSectionHeader.background": "#12151a",
+      // "list.focusForeground": "#ff0000",
+      // "list.activeSelectionForeground": "#ffffff",
+      // "list.focusAndSelectionOutline": "#ff0000",
+      "list.hoverBackground": "#6666661f",
+      "list.focusBackground": "#6666661f",
+      "list.activeSelectionBackground": "#aaaaaa1f",
+      "list.inactiveSelectionBackground": "#aaaaaa1f",
+      "list.inactiveFocusBackground": "#00000000",
+      // Tab | 标签 | 顶部
+      "tab.activeBackground": "#1a1d22",
+      "tab.inactiveBackground": "#12151a",
+      // "tab.activeBorderTop": "#4d9375",
+      "tab.activeBorderTop": "#66c0ad",
+      "tab.activeBorder": "#00000000",
+      "tab.hoverBackground": "#1a1d22",
+      "tab.border": "#aaaaaa5f",
+      // tab 背后整个 tab 条的背景色
+      "editorGroupHeader.tabsBackground": "#12151a",
+      // Breadcrumb | 面包屑 | 顶部
+      "breadcrumb.background": "#1a1d22",
+      "breadcrumb.activeSelectionForeground": "#66c0ad",
+      "breadcrumbPicker.background": "#12151abf",
+      // Editor | 编辑器 | 中间
+      "editor.background": "#1a1d22",
+      "editorGroup.border": "#abbcab2f",
+      "editorLineNumber.foreground": "#cccccc5f",
+      "editorLineNumber.activeForeground": "#cccccc",
+      "editor.selectionBackground": "#aaaaaa4f",
+      "editor.selectionHighlightBackground": "#aaaaaa1f",
+      "editor.wordHighlightBackground": "#aaaaaa1f",
+      // 光标覆盖之后内容的颜色
+      "editorCursor.background": "#000000",
+      // 与选中内容一致的, 高亮其边框
+      // "editor.selectionHighlightBorder": "#ffffff3f",
+      // 小组件背景颜色 | 提示/查找/替换
+      "editorWidget.background": "#12151aef",
+      // 鼠标悬停在内容上提示的背景色
+      "editorHoverWidget.background": "#12151aef",
+      // 智能提示面板 | 如果未设置就使用上面小组件的
+      // "editorSuggestWidget.background": "#0a0a0a",
+      // "editorSuggestWidget.selectedBackground": "#ff0000",
+      "editorSuggestWidget.selectedForeground": "#ffffffff",
+      "editorSuggestWidget.selectedBackground": "#aaaaaa3f",
+      "editor.lineHighlightBackground": "#aaaaaa1f",
+      // 粘性滚动代码背景色设置
+      "editorStickyScroll.background": "#1a1d22",
+      "editorStickyScrollHover.background": "#aaaaaa1f",
+      // 代码参数提示
+      // "editorInlayHint.background": "#ffffff10",
+      // "editorInlayHint.foreground": "#ffffff6f",
+      // Terminal | 终端 | 编辑区底部
+      // TODO: 怎么设置终端失去焦点时背景色之类？
+      // 选择背景色
+      "terminal.selectionBackground": "#d1d1d130",
+      // Badge: 小型的信息标签, 测试只有终端这边的有反应, 活动栏需要单独设置, 有可能时因为原主题设置了活动栏的原因?
+      "badge.background": "#aaaaaa5f",
+      "badge.foreground": "#cccccc"
+    }
+  },
+  // ================================================================
+  // 终端 | Terminal
+  // ================================================================
+  // 定义在 macOS 上运行的终端应用程序
+  "terminal.external.osxExec": "iTerm.app",
+  "terminal.integrated.profiles.windows": {
+    "Git_Bash": {
+      "icon": "terminal-bash",
+      "path": "D:\\GlobalScoopApps\\apps\\git\\current\\bin\\bash.exe",
+      "args": [
+        "--login",
+        "-i"
+      ]
+    }
+  },
+  "git.path": "D:\\GlobalScoopApps\\apps\\git\\current\\bin\\git.exe",
+  "terminal.integrated.defaultProfile.windows": "Git_Bash",
+  "terminal.external.windowsExec": "D:\\GlobalScoopApps\\apps\\git\\current\\bin\\bash.exe",
+  // hint: 开启GPU加速后, 终端速度明显快多了
+  "terminal.integrated.gpuAcceleration": "on",
+  "terminal.integrated.fontSize": 14,
+  // 终端字体 | 不设置的话默认使用编辑器字体
+  "terminal.integrated.fontFamily": "Comic Shanns, Hack Nerd Font Mono, monospace",
+  // "terminal.integrated.fontFamily": "Input Mono, Hack Nerd Font Mono, monospace",
+  // "terminal.integrated.fontFamily": "JetBrains Mono, Hack Nerd Font Mono,monospace",
+  "terminal.integrated.confirmOnKill": "never",
+  "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.lineHeight": 1.2,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.persistentSessionReviveProcess": "never",
+  "terminal.integrated.tabs.enabled": true,
+  // "terminal.integrated.tabs.location": "right",
+  // ================================================================
+  // better comments
+  // ================================================================
+  "better-comments.multilineComments": true,
+  "better-comments.highlightPlainText": true,
+  "better-comments.tags": [
+    {
+      "tag": "HINT",
+      "color": "#fff",
+      "backgroundColor": "#0bba54"
+    },
+    {
+      "tag": "NOTE",
+      "color": "#fff",
+      "backgroundColor": "#3498db"
+    },
+    {
+      "tag": "TODO",
+      "color": "#fff",
+      "backgroundColor": "#ff7c00"
+    },
+    {
+      "tag": "HACK",
+      "color": "#fff",
+      "backgroundColor": "#ff7c00"
+    },
+    {
+      "tag": "FIXME",
+      "color": "#fff",
+      "backgroundColor": "#ff4757"
+    },
+    {
+      "tag": "BUG",
+      "color": "#fff",
+      "backgroundColor": "#ff4757"
+    }
+  ],
+  // ================================================================
+  // comment anchors
+  // ================================================================
+  // 锚点加载解析时长，通过使用更大的值来获得更好的性能
+  "commentAnchors.parseDelay": 300,
+  // 工作区最大显示文件数量
+  "commentAnchors.workspace.maxFiles": 50,
+  // 排除在外
+  "commentAnchors.workspace.excludeFiles": "**/{node_modules,.git,.idea,target,out,build,bin,obj,dist,vendor}/**/*",
+  "commentAnchors.tags.separators": [
+    " - ",
+    ": ",
+    " ",
+    "："
+  ],
+  "commentAnchors.tags.anchors": {
+    // ANCHOR: 一个锚点
+    "ANCHOR": {
+      "iconColor": "default",
+      "highlightColor": "#A8C023",
+      "scope": "file"
+    },
+    "TODO": {
+      "iconColor": "blue",
+      "highlightColor": "#3ea8ff",
+      "scope": "workspace"
+    },
+    "BUG": {
+      "iconColor": "red",
+      "highlightColor": "#F44336",
+      "scope": "workspace"
+    },
+    "FIXME": {
+      "iconColor": "red",
+      "highlightColor": "#F44336",
+      "scope": "workspace"
+    },
+    // NOTE: 特别说明
+    "NOTE": {
+      "iconColor": "orange",
+      "highlightColor": "#64DD17",
+      "scope": "workspace"
+    },
+    // REVIEW: 需要额外审查的部分
+    "REVIEW": {
+      "iconColor": "green",
+      "highlightColor": "#FFB300",
+      "scope": "workspace"
+    },
+    // disabled
+    "STUB": {
+      "scope": "file",
+      "enabled": false
+    },
+    "SECTION": {
+      "scope": "file",
+      "enabled": false
+    },
+    "LINK": {
+      "scope": "file",
+      "enabled": false
+    }
+  },
+  // ================================================================
+  // ErrorLens
+  // ================================================================
+  // 是否使用斜体
+  // "errorLens.fontStyleItalic": true,
+  "errorLens.fontWeight": "500",
+  "errorLens.margin": "20px",
+  "errorLens.messageTemplate": "$severity：$message ($source) $count",
+  "errorLens.removeLinebreaks": false,
+  "errorLens.gutterIconsFollowCursorOverride": false,
+  // 启用的错误提示等级
+  "errorLens.enabledDiagnosticLevels": [
+    "error",
+    "warning"
+  ],
+  // ================================================================
+  // Prettier
+  // ================================================================
+  "prettier.printWidth": 120,
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "all",
+  // ================================================================
+  // Formatter | 指定文件类型指定格式化方式
+  // ================================================================
+  // 保存时是否格式化
+  "editor.formatOnSave": true,
+  // 所有文件都使用这种方式进行格式化
+  // "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript][jsonc][json][vue][typescript][html][css][less]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.suggest.insertMode": "replace"
+  },
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  // ================================================================
+  // paramHints
+  // ================================================================
+  "javascript.inlayHints.parameterNames.enabled": "none",
+  "typescript.inlayHints.parameterNames.enabled": "none",
+  "javascript.inlayHints.parameterTypes.enabled": false,
+  "typescript.inlayHints.parameterTypes.enabled": false,
+  "editor.inlayHints.enabled": "off",
+  "parameterHints.enabled": false,
+  // ================================================================
+  // Eslint
+  // ================================================================
+  //  启用ESLint作为已验证文件的格式化程序
+  "eslint.format.enable": true,
+  // "eslint.validate": ["javascript"],
+  // "eslint.options": {
+  //   // 指定全局配置文件, 会覆盖优先于本地配置
+  //   "overrideConfigFile": "/Users/feng/.vscode/.eslintrc.js"
+  // },
+  // "eslint.format.enable": true,
+  // "eslint.quiet": true,
+  // "eslint.alwaysShowStatus": true,
+  // ================================================================
+  // files 相关
+  // ================================================================
+  // 启用后，保存文件时在文件末尾插入一个·最终新行。
+  "files.insertFinalNewline": true,
+  "files.associations": {
+    "*.vue": "vue",
+    "*.wpy": "vue",
+    "*.wxml": "html",
+    "*.wxss": "css",
+    "*.cjson": "jsonc",
+    "*.json": "jsonc",
+    "*.wxs": "javascript",
+    "*.ejs": "html",
+    "*.html": "html"
+  },
+  //   文件焦点变化时自动保存
+  "files.defaultLanguage": "En",
+  // 这些文件将不会显示在工作空间中
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true
+    // "**/*.js": {
+    //     "when": "$(basename).ts" //ts编译后生成的js文件将不会显示在工作空中
+    // }
+    // "**/node_modules": true
+  },
+  // js
+  "javascript.referencesCodeLens.enabled": true,
+  "javascript.format.semicolons": "remove",
+  //  #让函数(名)和后面的括号之间加个空格
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  // ============= plugin config begin =============
+  "gitProjectManager.storeRepositoriesBetweenSessions": true,
+  "gitProjectManager.ignoredFolders": [
+    "node_modules"
+  ],
+  "gitProjectManager.maxDepthRecursion": 4,
+  "gitProjectManager.checkRemoteOrigin": false,
+  // spell userWords
+  "cSpell.userWords": [
+    "Axios",
+    "edaas",
+    "juejin",
+    "MVVM",
+    "ngconsole",
+    "tabset",
+    "todolist",
+    "tspace",
+    "uihelper",
+    "vdoi",
+    "viewmodel",
+    "zagger"
+  ],
+  "security.workspace.trust.untrustedFiles": "open",
+  "minapp-vscode.disableAutoConfig": true,
+  // ============= plugin config end =============
+  // md format onsave
+  "markdownlint.run": "onSave",
+  //配置 ESLint 检查的文件类型
+  "eslint.validate": [
+    "typescript",
+    "javascript",
+    "javascriptreact",
+    "typescriptreact",
+    "html",
+    "vue"
+  ],
+  // 对html的配置
+  "html.format.enable": true,
+  "html.format.wrapLineLength": 180,
+  "html.format.contentUnformatted": "pre,code,textarea",
+  "html.format.indentInnerHtml": true,
+  "html.validate.scripts": true,
+  "html.validate.styles": true,
+  "html.autoClosingTags": true,
+  "html.format.indentHandlebars": true,
+  "html.format.templating": true,
+  "html.trace.server": "messages",
+  //
+  "css.completion.completePropertyWithSemicolon": false,
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+    "XXX",
+    "[ ]",
+    "[x]"
+  ],
+  "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+  "guides.enabled": false,
+  // 当按tab键的时候，会自动提示
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.showAbbreviationSuggestions": true,
+  "emmet.includeLanguages": {
+    // jsx的提示
+    "javascript": "javascriptreact",
+    "vue-html": "html",
+    "vue": "html",
+    "wxml": "html"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[svg]": {
+    "editor.defaultFormatter": "jock.svg"
+  },
+  // @路径提示
+  "path-intellisense.mappings": {
+    "@": "${workspaceRoot}/src"
+  },
+  "git.confirmSync": false,
+  "local-history.path": "/Users/zagger/code/local_history",
+  "vsicons.dontShowNewVersionMessage": true,
+  "settingsSync.ignoredSettings": [],
+  "projectManager.git.baseFolders": [
+    "~/code",
+    "~/Github"
+  ],
+  "Notes.notesLocation": "/Users/zagger/Desktop/zagger_files/notes",
+  "git.enableSmartCommit": true,
+  "update.mode": "manual",
+  "interview.updateNotification": 1680268734130,
+  "interview.workspaceFolder": "e:\\frontend-docs",
+  "git.ignoreMissingGitWarning": true,
+  "editor.defaultFormatter": "vscode.typescript-language-features",
+  // 对vue配置
+  // #这个按用户自身习惯选择
+  // vetur 缩进是2
+  "vetur.format.enable": false,
+  "vetur.format.options.tabSize": 2,
+  "vetur.format.options.useTabs": false,
+  // 选择 vue 文件中 template 的格式化工具
+  // 仅仅格式化 html 部分，忽略 js, css
+  "vetur.format.defaultFormatter.html": "js-beautify-html",
+  "vetur.format.defaultFormatter.js": "prettier-eslint",
+  "vetur.format.defaultFormatter.postcss": "prettier",
+  "vetur.format.defaultFormatter.scss": "prettier",
+  "vetur.format.defaultFormatter.less": "prettier",
+  "vetur.format.defaultFormatter.css": "prettier",
+  "vetur.format.defaultFormatter.stylus": "stylus-supremacy",
+  "vetur.format.defaultFormatter.ts": "prettier",
+  // vetur 的自定义设置 #vue组件中html代码格式化样式
+  "vetur.format.defaultFormatterOptions": {
+    "js-beautify-html": {
+      "eol": "\n",
+      "indent_size": 2,
+      "indent_char": " ",
+      "indent_with_tabs": false,
+      "templating": [
+        "none"
+      ],
+      "unformatted": [
+        "script",
+        "pre",
+        "style"
+      ],
+      "wrap_line_length": 120,
+      "wrap_attributes": "auto",
+      "end_with_newline": false
+    },
+    "prettier": {
+      "prettier.printWidth": 120, // 超过最大值换行
+      "semi": false, // 格式化不加分号
+      "wrapAttributes": false
+    }
+  },
+  "extensions.autoUpdate": false,
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "[ignore]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  // "window.zoomLevel": 1
+}

@@ -1,0 +1,192 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+  {
+    "key": "ctrl+shift+oem_2",
+    "command": "editor.action.blockComment",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+a",
+    "command": "-editor.action.blockComment",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+oem_6",
+    "command": "editor.unfoldAll",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+k ctrl+j",
+    "command": "-editor.unfoldAll",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+oem_4",
+    "command": "editor.foldAll",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+k ctrl+0",
+    "command": "-editor.foldAll",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+shift+d",
+    "command": "editor.action.copyLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+down",
+    "command": "-editor.action.copyLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+b",
+    "command": "gitlens.showQuickFileHistory",
+    "when": "gitlens:enabled && config.gitlens.keymap == 'chorded'"
+  },
+  {
+    "key": "ctrl+shift+g h",
+    "command": "-gitlens.showQuickFileHistory",
+    "when": "gitlens:enabled && config.gitlens.keymap == 'chorded'"
+  },
+  {
+    "key": "ctrl+shift+alt+h",
+    "command": "gitlens.showQuickFileHistory",
+    "when": "gitlens:enabled && config.gitlens.keymap == 'alternate'"
+  },
+  {
+    "key": "alt+h",
+    "command": "-gitlens.showQuickFileHistory",
+    "when": "gitlens:enabled && config.gitlens.keymap == 'alternate'"
+  },
+  {
+    "key": "ctrl+shift+g",
+    "command": "workbench.action.terminal.paste",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+v",
+    "command": "-workbench.action.terminal.paste",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+alt+i",
+    "command": "extension.fileheader",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+alt+i",
+    "command": "-extension.fileheader",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+j",
+    "command": "editor.action.joinLines"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "bracket-pair-colorizer-2.expandBracketSelection"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "-workbench.action.reloadWindow",
+    "when": "isDevelopment"
+  },
+  {
+    "key": "ctrl+shift+r",
+    "command": "workbench.action.reloadWindow"
+  },
+  {
+    "key": "ctrl+shift+up",
+    "command": "workbench.action.editor.previousChange",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+f5",
+    "command": "-workbench.action.editor.previousChange",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+down",
+    "command": "workbench.action.editor.nextChange",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+f5",
+    "command": "-workbench.action.editor.nextChange",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+left",
+    "command": "-workbench.action.terminal.focusPreviousPane",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+alt+q",
+    "command": "workbench.action.navigateToLastEditLocation"
+  },
+  {
+    "key": "ctrl+k ctrl+q",
+    "command": "-workbench.action.navigateToLastEditLocation"
+  },
+  {
+    "key": "ctrl+alt+left",
+    "command": "workbench.action.navigateBack"
+  },
+  {
+    "key": "alt+left",
+    "command": "-workbench.action.navigateBack"
+  },
+  {
+    "key": "ctrl+alt+right",
+    "command": "workbench.action.navigateForward"
+  },
+  {
+    "key": "alt+right",
+    "command": "-workbench.action.navigateForward"
+  },
+  {
+    "key": "ctrl+shift+c",
+    "command": "-workbench.action.terminal.openNativeConsole",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "ctrl+oem_3",
+    "command": "workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "ctrl+oem_3",
+    "command": "-workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "ctrl+shift+g",
+    "command": "workbench.view.scm",
+    "when": "!gitlens:disabled && config.gitlens.keymap == 'chorded'"
+  },
+  {
+    "key": "ctrl+shift+g g",
+    "command": "-workbench.view.scm",
+    "when": "!gitlens:disabled && config.gitlens.keymap == 'chorded'"
+  },
+  {
+    "key": "shift+alt+g",
+    "command": "git-graph.view"
+  },
+  {
+    "key": "shift+alt+p",
+    "command": "-projectManager.listProjects"
+  },
+  {
+    "key": "shift+alt+p",
+    "command": "projectManager.listProjects"
+  },
+  {
+    "key": "ctrl+alt+j",
+    "command": "juejin.post"
+  },
+  {
+    "key": "ctrl+p ctrl+p",
+    "command": "-juejin.post"
+  }
+]
