@@ -1,0 +1,8 @@
+Host 172.16.203.254
+
+PubkeyAcceptedKeyTypes=+ssh-rsa
+
+Host github.com
+Hostname ssh.github.com
+Port 443
+
